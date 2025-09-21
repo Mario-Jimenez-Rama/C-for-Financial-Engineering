@@ -5,25 +5,25 @@ A C++ simulation of a high-frequency trading engine that processes synthetic mar
 This project models the core components of a low-latency trading system. It generates a high-volume stream of simulated price data (ticks) for multiple financial instruments. A trade engine then analyzes each data tick in real-time, applying algorithmic signals to make automated buy/sell decisions. The system meticulously tracks performance metrics like processing latency and exports all results for analysis.
 
 ## Key Features
-Synthetic Market Data Generation: Creates a configurable volume of realistic price ticks for multiple instruments.
+- Synthetic Market Data Generation: Creates a configurable volume of realistic price ticks for multiple instruments.
 
-Low-Latency Processing: Engineered with performance in mind, using cache-aligned data structures.
+- Low-Latency Processing: Engineered with performance in mind, using cache-aligned data structures.
 
-Algorithmic Trading Signals: The core logic is driven by four distinct trading signals:
+- Algorithmic Trading Signals: The core logic is driven by four distinct trading signals:
 
-Signal 1 (Extreme Price Check): Triggers on absolute price outliers (< $105.00 or > $195.00).
+  - Signal 1 (Extreme Price Check): Triggers on absolute price outliers (< $105.00 or > $195.00).
 
-Signal 2 (Mean Reversion): Triggers a buy if price is >2% below the simple moving average (SMA) or a sell if >2% above.
+  - Signal 2 (Mean Reversion): Triggers a buy if price is >2% below the simple moving average (SMA) or a sell if >2% above.
 
-Signal 3 (Momentum): Triggers a buy on two consecutive positive price changes.
+  - Signal 3 (Momentum): Triggers a buy on two consecutive positive price changes.
 
-Signal 4 (Volatility & Mean Reversion): Triggers a buy only when the price is below the SMA and current volatility is high.
+  - Signal 4 (Volatility & Mean Reversion): Triggers a buy only when the price is below the SMA and current volatility is high.
 
-Performance Analytics: Tracks and reports detailed statistics, including nanosecond-grade tick-to-trade latency.
+- Performance Analytics: Tracks and reports detailed statistics, including nanosecond-grade tick-to-trade latency.
 
-Data Export: Outputs order history and price data to CSV files.
+- Data Export: Outputs order history and price data to CSV files.
 
-Data Visualization: The code VisualizePrices.py plot and visualize the results
+- Data Visualization: The code VisualizePrices.py plot and visualize the results
 
 This are the results for n=100000 Ticks:
 
