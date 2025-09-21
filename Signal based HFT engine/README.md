@@ -39,6 +39,7 @@ Signal 4 triggered: 48181 times
 Total Runtime (ms): 130
 
 This are the results for n=1000000 Ticks:
+
 --- Performance Report ---
 Total Market Ticks Processed: 1000000
 Total Orders Placed: 955639
