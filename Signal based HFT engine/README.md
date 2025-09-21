@@ -47,8 +47,6 @@ Average Tick-to-Trade Latency (ns): 726587156
 Maximum Tick-to-Trade Latency (ns): 1353629250  
 Signal 1 triggered: 100065 times  
 Signal 2 triggered: 933217 times  
-
-
-Signal 3 triggered: 166640 times
-Signal 4 triggered: 482983 times
+Signal 3 triggered: 166640 times  
+Signal 4 triggered: 482983 times  
 Total Runtime (ms): 1449
