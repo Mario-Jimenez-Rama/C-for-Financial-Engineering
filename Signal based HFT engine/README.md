@@ -28,6 +28,7 @@ This project models the core components of a low-latency trading system. It gene
 This are the results for n=100000 Ticks:
 
 --- Performance Report ---
+
 Total Market Ticks Processed: 100000
 Total Orders Placed: 95468
 Average Tick-to-Trade Latency (ns): 65434330
