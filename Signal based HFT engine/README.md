@@ -27,27 +27,26 @@ This project models the core components of a low-latency trading system. It gene
 
 This are the results for n=100000 Ticks:
 
---- Performance Report ---
-
-Total Market Ticks Processed: 100000
-Total Orders Placed: 95468
-Average Tick-to-Trade Latency (ns): 65434330
-Maximum Tick-to-Trade Latency (ns): 120529083
-Signal 1 triggered: 10039 times
-Signal 2 triggered: 93185 times
-Signal 3 triggered: 16724 times
-Signal 4 triggered: 48181 times
-Total Runtime (ms): 130
+--- Performance Report ---  
+Total Market Ticks Processed: 100000  
+Total Orders Placed: 95468  
+Average Tick-to-Trade Latency (ns): 65434330  
+Maximum Tick-to-Trade Latency (ns): 120529083  
+Signal 1 triggered: 10039 times  
+Signal 2 triggered: 93185 times  
+Signal 3 triggered: 16724 times  
+Signal 4 triggered: 48181 times  
+Total Runtime (ms): 130  
 
 This are the results for n=1000000 Ticks:
 
---- Performance Report ---
-Total Market Ticks Processed: 1000000
-Total Orders Placed: 955639
-Average Tick-to-Trade Latency (ns): 726587156
-Maximum Tick-to-Trade Latency (ns): 1353629250
-Signal 1 triggered: 100065 times
-Signal 2 triggered: 933217 times
+--- Performance Report ---  
+Total Market Ticks Processed: 1000000  
+Total Orders Placed: 955639  
+Average Tick-to-Trade Latency (ns): 726587156  
+Maximum Tick-to-Trade Latency (ns): 1353629250  
+Signal 1 triggered: 100065 times  
+Signal 2 triggered: 933217 times  
 
 
 Signal 3 triggered: 166640 times
