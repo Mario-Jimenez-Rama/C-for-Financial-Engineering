@@ -86,8 +86,8 @@ and compare three variants:
 - CRTP is ~**3.9%** faster than virtual, ~**3.6%** faster than free.
 - Virtual ≈ free in this test (only **0.4%** slower), suggesting the indirect call overhead is small relative to the math (2 divides, several muls/adds).
 
-## Why CRTP wins (here, modestly)
-- **Inlining & constant propagation**: CRTP removes the virtual call boundary so `on_tick` and `on_tick_impl` fully inline. `alpha1/alpha2` can propagate, common subexpressions can be optimized.
+## Why CRTP wins 
+- **Inlining & constant propagation**: CRTP removes the virtual call boundary so `on_tick` and `on_tick_impl` is fully inline. `alpha1/alpha2` can propagate, common subexpressions can be optimized.
 - **No indirect branch**: avoids vtable load & indirect call; even though it’s well-predicted in a tight loop, removing it can still shave a few cycles and enable better scheduling.
 
 ## Why virtual is close to free
