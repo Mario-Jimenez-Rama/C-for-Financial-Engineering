@@ -17,7 +17,7 @@ strategy_crtp.hpp
 src/
 main.cpp
 
-## Build & Run (no CMake, quickest)
+## Build & Run 
 ```bash
 # from project root
 clang++ -std=c++20 -O3 -DNDEBUG -march=native -fno-exceptions -fno-rtti \
