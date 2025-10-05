@@ -26,9 +26,6 @@ clang++ -std=c++20 -O3 -DNDEBUG -march=native -fno-exceptions -fno-rtti \
 # run: [N_TICKS] [ITERS]
 ./hft 10000000 1
 
-
----
-
 # RESULTS.md (your numbers + computed deltas)
 
 ```markdown
