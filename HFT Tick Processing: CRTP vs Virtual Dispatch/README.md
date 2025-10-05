@@ -58,7 +58,6 @@ crtp_call ns/tick: 3.550 ticks/sec: 281.65 M
 - CRTP vs **free**: **~3.56% faster** ( (3.681 − 3.550) / 3.681 )
 - **virtual** vs free: ~0.38% slower
 
-```markdown
 # CRTP vs Virtual Dispatch for a Per-Tick Signal
 
 ## Problem
