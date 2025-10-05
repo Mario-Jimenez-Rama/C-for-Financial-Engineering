@@ -23,10 +23,11 @@ main.cpp
 clang++ -std=c++20 -O3 -DNDEBUG -march=native -fno-exceptions -fno-rtti \
   -Iinclude src/main.cpp -o hft
 
+```
+
 # run: [N_TICKS] [ITERS]
 ./hft 10000000 1
 
-```markdown
 # Benchmark Results
 
 **Setup**
