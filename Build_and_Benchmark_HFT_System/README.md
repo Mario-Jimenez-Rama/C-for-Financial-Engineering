@@ -25,7 +25,7 @@ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
 ```
 
-▶️ Run Instructions
+▶️ Run Instructions 
 🏃 Run Main Simulation
 ```bash
 ./build/hft_app
