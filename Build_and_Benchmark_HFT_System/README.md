@@ -31,7 +31,7 @@ cmake --build build -j
 ⚡ Run Latency Benchmark
 ./build/hft_latency_test
 
-📊 Benchmark Results
+## 📊 Benchmark Results
 
 | Load | Reserve | Samples | Mean (ns) | StdDev | P99 (ns) | Min (ns) | Max (ns) |
 |------|----------|----------|-----------|---------|-----------|-----------|
@@ -42,7 +42,7 @@ cmake --build build -j
 | 100K | OFF | 42788 | 2068.96 | 1944.97 | 6500 | 708 | 243250 |
 | 100K | ON | 42709 | 1883.28 | 1703.05 | 5959 | 542 | 236625 |
 
-🧪 Performance Analysis
+## 🧪 Performance Analysis
 
 Latency: Median tick-to-trade latency ≈ 1.5–2.0 µs, 99th percentile ≈ 6 µs.
 
@@ -60,7 +60,7 @@ per-core engine instances
 
 memory pool reuse
 
-🧩 System Architecture
+## 🧩 System Architecture
 High-Level Flow
 [ MarketDataFeed ]
         │
@@ -113,7 +113,7 @@ Timer	Measures high-resolution tick-to-trade latency
 | +flush()          |
 +-------------------+
 
-📈 Benchmark Methodology
+## 📈 Benchmark Methodology
 
 Each benchmark run generates N synthetic orders (buy/sell) and measures:
 
@@ -130,14 +130,14 @@ auto start = Clock::now();
 auto end = Clock::now();
 auto ns = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
 
-🧮 Example Output Snapshot
+## 🧮 Example Output Snapshot
 === Load=100K, reserve=ON ===
 Samples: 42709
 Min: 542 ns | Max: 236625 ns | Mean: 1883.28 ns
 StdDev: 1703.05 | P50: 1625 | P90: 2916 | P99: 5959
 Snapshot BestBid=0 BestAsk=0
 
-🧱 Project Structure
+## 🧱 Project Structure
 Build_and_Benchmark_HFT_System/
 │
 ├── include/
