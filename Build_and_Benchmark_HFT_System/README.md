@@ -19,7 +19,7 @@ Design and benchmark a simplified high-frequency trading (HFT) prototype using m
 | **Test Harness** | Benchmarks tick-to-trade latency under load |
 
 ## 🏗️ Build
-```bash
+
 mkdir -p build
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
